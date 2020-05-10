@@ -198,7 +198,7 @@ const AddProducts = () => {
                     {successMessage()}
                     {createProductForm()}
                 </div>
-                {getRedirect ? <Redirect to="/admin/dashboard"></Redirect> : null}
+                {getRedirect ? <Redirect to="/admin/dashboard"/> : null}
             </div>
         </Base>
     )
