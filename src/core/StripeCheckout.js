@@ -43,6 +43,10 @@ const StripeCheckout = ({ products, setReload = f => f, reload = undefined }) =>
                 console.log(res);
                 const { status } = res;
                 console.log('STATUS', status);
+                cartEmpty(() => {
+                    console.log('Cart');
+                });
+                setReload(!reload)
             })
             .catch(err => console.log(err));
     };
